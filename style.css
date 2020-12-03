@@ -1,0 +1,151 @@
+/* Write some CSS below */
+/* style.css */
+
+/*sebastiaan, you can access the recording through learn:  https://learn.lewagon.com/onboarding?secure_token=487704a46361c55604f163a258d8c613
+From Le Wagon Melbourne to Everyone:  08:35 PM
+https://www.youtube.com/watch?v=9OXtBHHA1FU
+*/
+
+body {
+	font-family: Overpass;
+	margin: 0px;
+}
+
+h1, h2, h3 {
+	color: #404042;
+	font-family: Chivo;
+}
+
+p {
+	/*color: #404042;*/
+	opacity: .7;
+}
+
+a {
+	color: blue;
+	font-weight: bold;
+	text-decoration: none;
+	transition: .3s;
+}
+
+a:hover {
+	color: darkblue;
+}
+
+.banner {
+	background-image: linear-gradient(rgba(100,0,100,0.6), rgba(100,100,100,0.6)), url('images/background.jpg');
+	background-size: cover;
+	background-position: center;
+	padding: 150px 0;
+	text-align: center;
+}
+
+.banner h1 {
+	color: white;
+	font-size: 45px;
+	margin: 0;
+}
+
+.banner p {
+	color: yellow;
+	font-size: 24px;
+}
+
+.button-blue {
+	background-color: #1A48E3;
+	color: white;
+	padding: 16px 48px;
+	border-radius: 4px;
+	display: inline-block;
+	text-decoration: none;
+	transition: .5s;
+}
+
+.button-blue:hover {
+	background-color: #FFFFFF;
+}
+
+.container {
+	width: 1200px;
+	margin: auto;
+	text-align: center;
+}
+
+.cards{
+
+	display: grid;
+	grid-template-columns: 1fr 1fr 1fr 1fr  ;
+	grid-gap: 10px;
+	justify-items: center;
+}
+
+
+
+.card-white {
+	background: linear-gradient(rgba(100,100,100,0.6), rgba(230,230,230,0.6));
+	box-shadow: 1px 1px 6px rgba(0,0,0,0.2);
+	border-radius: 8px;
+	width: 200px;
+	/*text-align: center;*/
+	padding: 24px;
+	margin: 8px;
+}
+
+.card-white img {
+	width: 200px;
+	height: 180px;
+	object-fit: cover;
+	border-radius: 4px;
+	border-left: 1px solid rgba(0,0,0,0.2);
+	border-top: 1px solid rgba(0,0,0,0.2);;
+	box-shadow: 1px 1px 3px rgba(255,255,255,0.8);
+}
+
+.card-white h3 {
+	margin: 10px;
+	margin-bottom: 3px;
+}
+
+.card-white p {
+	margin: 0px;
+}
+
+.footer {
+	background: #404042;
+	text-align: center;
+	padding: 24px 0;
+	color: white;
+}
+
+/*.footer p {
+  color: white;
+  }*/
+
+  @media (min-width: 0px) {
+  	.container {
+  		width: auto;
+  	}
+  	.cards {
+  		grid-template-columns: 1fr;
+  	}
+
+  }
+
+
+  @media (min-width: 555px ) {
+  	.container {
+  		width: 540px;
+  	}
+  	.cards {
+  		grid-template-columns: 1fr 1fr;
+  	}
+  }
+
+  @media (min-width: 840px) {
+  	.container {
+  		width: 810px;
+  	}
+  	.cards {
+  		grid-template-columns: 1fr 1fr 1fr;
+  	}
+  }
